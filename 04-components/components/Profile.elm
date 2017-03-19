@@ -1,6 +1,6 @@
 module Profile exposing (Model, Msg, initialModel, view, update)
 
-import Html exposing (Html, div, h2, input, label, text)
+import Html exposing (Html, br, div, h2, input, label, text)
 import Html.Attributes exposing (type_, value)
 import Html.Events exposing (onInput)
 
@@ -32,6 +32,7 @@ view model =
             , value model.name
             ]
             []
+        , br [] []
         , label [] [ text "Email" ]
         , input
             [ type_ "text"
